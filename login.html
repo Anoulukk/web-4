@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="boxicons-master/css/boxicons.css">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">
+
+
 
     <title>f4 cafe | Login</title>
 
@@ -26,26 +31,38 @@
             </header>
         </div>
 
-        <div class="input-field">
+        <div>
             <form>
-                <input type="number" id="number" name="number" class="input"><br>
+                <input type="number" id="number" name="number" class="input" placeholder="ເບີໂຕະ"><br><br>
            
-            <input type="button" value="Submit" onclick="validate()" class="input" >
+            <input type="button" value="Submit" onclick="validate()" class="input2"  >
             <i class='bx bx-user' ></i>
             </form>
         </div>
+        
 
 
 	<script>
 		function validate() {
 			var number = document.getElementById("number").value;
 			if (number == "") {
-				alert("Please enter your name.");
+				alert("ກະລຸນາປ້ອນເບີໂຕະຂອງທ່ານ. ຂອບໃຈ");
 			} else {
-				alert("Thank you for entering your name");
+                
+            setTimeout(function() {
+             swal({
+                 title: "ສຳເລັດ",
+                 text: "ຂອບໃຈ ທີ່ໃຊ້ບໍລິການ",
+                 type: "success"
+             }, function() {
+                 window.location = "file:///C:/Users/owenw/Downloads/web-4/web-main/index.html"; 
+             });
+         }, 1000);
+     
 			}
 		}
 	</script>
+
 
 
 
