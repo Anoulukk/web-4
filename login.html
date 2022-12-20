@@ -49,15 +49,17 @@
 				alert("ກະລຸນາປ້ອນເບີໂຕະຂອງທ່ານ. ຂອບໃຈ");
 			} else {
                 
-            setTimeout(function() {
-             swal({
-                 title: "ສຳເລັດ",
-                 text: "ຂອບໃຈ ທີ່ໃຊ້ບໍລິການ",
-                 type: "success"
-             }, function() {
-                 window.location = "file:///C:/Users/owenw/Downloads/web-4/web-main/index.html"; 
-             });
-         }, 1000);
+                setTimeout(function() {
+        swal({
+                title: "ສຳເລັດ",
+                text: "ຂອບໃຈ ທີ່ໃຊ້ບໍລິການ",
+                type: "success", 
+                timer: 2500, 
+                showConfirmButton: false 
+            }, function(){
+                window.location = "https://navintarbt.github.io/sss/"; 
+                });
+        });
      
 			}
 		}
