@@ -9,22 +9,15 @@ body{
     background-repeat: no-repeat;
     
 }
-.imm{
-    margin-top: 0.4rem;
-    margin-left: 74rem;
-    padding: 0px;  
-    width:1vw;
-    position:absolute;
 
-}
 
-.box{
+.box .imm{
     display: flex;
     justify-content: right;
     align-items: center;
     min-height: 90vh;
 }
-.container{
+.container {
     width: 350px;
     display: flex;
     flex-direction: column;
@@ -44,6 +37,8 @@ header{
     display: flex;
     justify-content: center;
     padding: 10px 0 10px 0;
+    margin-top: -1em;
+
 }
 
 
